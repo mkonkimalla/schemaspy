@@ -8,6 +8,7 @@
 
 > Please support a project by simply putting a Github star. 
 Share this library with friends on Twitter and everywhere else you can.
+Also on anyother social networking site.
 
 > If you notice bug or have something not working please report an issue, we'll try to fix it as soon as possible.
 More documentation and features expected to be soon. Feel free to contribute.
