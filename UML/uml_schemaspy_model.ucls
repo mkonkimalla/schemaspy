@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.schemaspy.model.ImpliedForeignKeyConstraint" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ImpliedForeignKeyConstraint.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="129" width="333" x="190" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.schemaspy.model.Table.ByColumnIdComparator" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Table.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="93" width="241" x="1761" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.schemaspy.model.RailsForeignKeyConstraint" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/RailsForeignKeyConstraint.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="93" width="321" x="584" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.schemaspy.model.TableComment" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/TableComment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="183" width="169" x="104" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.schemaspy.model.ConnectionFailure" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ConnectionFailure.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="111" width="223" x="313" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.schemaspy.model.EmptySchemaException" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/EmptySchemaException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="75" width="188" x="576" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="org.schemaspy.model.Database" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="471" width="499" x="2141" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="org.schemaspy.model.TableColumn" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/TableColumn.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="975" width="331" x="968" y="2298"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="org.schemaspy.model.View" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/View.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="129" width="285" x="2373" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="org.schemaspy.model.Table" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Table.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="975" width="383" x="1761" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="org.schemaspy.model.Catalog" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Catalog.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="201" width="159" x="2202" y="387"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="org.schemaspy.model.ConsoleProgressListener" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ConsoleProgressListener.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="273" width="375" x="1726" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="org.schemaspy.model.Schema" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Schema.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="201" width="159" x="2223" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="org.schemaspy.model.ForeignKey" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ForeignKey.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="471" width="217" x="804" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="org.schemaspy.model.RemoteTable" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/RemoteTable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="111" width="295" x="1426" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="16" language="java" name="org.schemaspy.model.ProgressListener" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ProgressListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="255" width="375" x="910" y="387"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="17" language="java" name="org.schemaspy.model.ForeignKeyConstraint" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ForeignKeyConstraint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="507" width="326" x="544" y="387"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="org.schemaspy.model.Routine" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Routine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="291" width="396" x="1325" y="387"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="org.schemaspy.model.InvalidConfigurationException" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/InvalidConfigurationException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="147" width="311" x="1061" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="org.schemaspy.model.LogicalRemoteTable" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/LogicalRemoteTable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="93" width="333" x="1426" y="2298"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="org.schemaspy.model.DatabaseObject" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/DatabaseObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="255" width="201" x="322" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="org.schemaspy.model.LogicalTable" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/LogicalTable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="93" width="291" x="2042" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="org.schemaspy.model.Database.CombinedMap" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="291" width="317" x="1761" y="387"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="org.schemaspy.model.TableColumn.ColumnComparator" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/TableColumn.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="75" width="241" x="968" y="3313"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="org.schemaspy.model.ProcessExecutionException" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/ProcessExecutionException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="111" width="274" x="1412" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="org.schemaspy.model.TableIndex" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/TableIndex.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="309" width="226" x="1097" y="1949"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="org.schemaspy.model.RoutineParameter" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/model/RoutineParameter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="129" width="233" x="1325" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <association id="29">    
+    <bendpoint x="2171" y="387"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="30" name="db"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="33" name="columns"/>      
+      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <association id="36">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="37" name="schemas"/>      
+      <multiplicity id="38" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <bendpoint x="1353" y="1949"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="40" name="columns"/>      
+      <multiplicity id="41" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <association id="43">    
+    <bendpoint x="1395" y="1949"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="44" name="table"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <bendpoint x="2108" y="387"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="47" name="locals"/>      
+      <multiplicity id="48" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="50" name="listener"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <bendpoint x="2391" y="387"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="53" name="schema"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="56" name="map2"/>      
+      <multiplicity id="57" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="58">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <association id="59">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="60" name="routines"/>      
+      <multiplicity id="61" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <bendpoint x="956" y="1949"/>    
+    <bendpoint x="956" y="934"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="63" name="children"/>      
+      <multiplicity id="64" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="66" name="parentTable"/>      
+      <multiplicity id="67" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="69" name="params"/>      
+      <multiplicity id="70" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="72" name="indexes"/>      
+      <multiplicity id="73" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <bendpoint x="2150" y="387"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="75" name="tables"/>      
+      <multiplicity id="76" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="77">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="78">    
+    <bendpoint x="1374" y="1949"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="79" name="primaryKeys"/>      
+      <multiplicity id="80" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="82" name="parents"/>      
+      <multiplicity id="83" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <bendpoint x="2129" y="387"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="85" name="remoteTables"/>      
+      <multiplicity id="86" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <bendpoint x="935" y="934"/>    
+    <bendpoint x="935" y="1949"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="88" name="childColumns"/>      
+      <multiplicity id="89" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="91" name="foreignKeys"/>      
+      <multiplicity id="92" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="93">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <association id="94">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="95" name="children"/>      
+      <multiplicity id="96" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <bendpoint x="977" y="1949"/>    
+    <bendpoint x="977" y="934"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="98" name="parents"/>      
+      <multiplicity id="99" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="101" name="childTable"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="103">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <association id="104">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="105" name="map1"/>      
+      <multiplicity id="106" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="107">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="108" name="catalog"/>      
+      <multiplicity id="109" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="110">    
+    <bendpoint x="553" y="934"/>    
+    <bendpoint x="553" y="1949"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="111" name="parentColumns"/>      
+      <multiplicity id="112" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="113">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="114">    
+    <bendpoint x="2412" y="387"/>    
+    <bendpoint x="2412" y="934"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="115" name="views"/>      
+      <multiplicity id="116" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="117">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <generalization id="118">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="true" package="true" protected="true" private="false" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.schemaspy.cli.ConfigFileArgumentParser" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/ConfigFileArgumentParser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="93" width="332" x="127" y="-14"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.schemaspy.cli.CommandLineArgumentParser" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/CommandLineArgumentParser.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="129" width="347" x="499" y="-14"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.schemaspy.cli.CommandLineArguments" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/CommandLineArguments.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="237" width="196" x="886" y="-14"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.schemaspy.cli.ConfigFileArgument" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/ConfigFileArgument.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="93" width="199" x="1122" y="-14"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.schemaspy.cli.PropertyFileDefaultProvider" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/PropertyFileDefaultProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="93" width="213" x="499" y="263"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.schemaspy.cli.PropertyFileDefaultProviderFactory" project="schemaspy" 
+    file="/schemaspy/src/main/java/org/schemaspy/cli/PropertyFileDefaultProviderFactory.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="93" width="309" x="1361" y="-14"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="7">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="8" name="defaultProvider"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="true" package="true" protected="true" private="false" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

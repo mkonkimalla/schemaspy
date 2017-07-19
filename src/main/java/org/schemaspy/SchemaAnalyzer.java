@@ -20,6 +20,7 @@ package org.schemaspy;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -59,6 +60,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.XML;
 
 /**
  * @author John Currier
@@ -200,6 +204,140 @@ public class SchemaAnalyzer {
             	catalog = meta.getConnection().getCatalog();
 
             SchemaMeta schemaMeta = config.getMeta() == null ? null : new SchemaMeta(config.getMeta(), dbName, schema);
+            
+            logger.info("Connected to " + meta.getDatabaseProductName() + " - " + meta.getDatabaseProductVersion());
+
+            if (schemaMeta != null && schemaMeta.getFile() != null) {
+                logger.info("Using additional metadata from " + schemaMeta.getFile());
+            }
+
+            //
+            // create our representation of the database
+            //
+            Database db = new Database(config, meta, dbName, catalog, schema, schemaMeta, progressListener);
+            databaseService.gatheringSchemaDetails(config, db, progressListener);
+
+            long duration = progressListener.startedGraphingSummaries();
+
+            schemaMeta = null; // done with it so let GC reclaim it
+
+            Collection<Table> tables = new ArrayList<Table>(db.getTables());
+            tables.addAll(db.getViews());
+
+            if (tables.isEmpty()) {
+                dumpNoTablesMessage(schema, config.getUser(), meta, config.getTableInclusions() != null);
+                if (!config.isOneOfMultipleSchemas()) // don't bail if we're doing the whole enchilada
+                    throw new EmptySchemaException();
+            }
+
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder;
+			try {
+				builder = factory.newDocumentBuilder();
+			} catch (ParserConfigurationException exc) {
+				throw new RuntimeException(exc);
+			}
+
+            Document document = builder.newDocument();
+            Element rootNode = document.createElement("database");
+            document.appendChild(rootNode);
+            DOMUtil.appendAttribute(rootNode, "name", dbName);
+            if (schema != null)
+                DOMUtil.appendAttribute(rootNode, "schema", schema);
+            DOMUtil.appendAttribute(rootNode, "type", db.getDatabaseProduct());
+
+            XmlTableFormatter.getInstance().appendTables(rootNode, tables);
+            
+            String xmlName = dbName;
+
+            // some dbNames have path info in the name...strip it
+            xmlName = new File(xmlName).getName();
+
+            // some dbNames include jdbc driver details including :'s and @'s
+            String[] unusables = xmlName.split("[:@]");
+            xmlName = unusables[unusables.length - 1];
+
+            if (schema != null)
+                xmlName += '.' + schema;
+            
+            // Adding json output file
+            String xmlStr = DOMUtil.toString(document);
+            String JSON_FILE_NAME = outputDir.getAbsolutePath() + "/" + xmlName + ".json";
+            try {
+            		int PRETTY_PRINT_INDENT_FACTOR = 2;
+            		
+				JSONObject xmlJSONObj = XML.toJSONObject(xmlStr);
+				String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
+				FileWriter fw = new FileWriter(JSON_FILE_NAME);
+				fw.write(jsonPrettyPrintString);
+				fw.close();
+			} catch (JSONException e) {
+				logger.warning("Exception during parsing xml to json object");
+				e.printStackTrace();
+			}
+            // End of json output
+            
+            // 'try' to make some memory available for the sorting process
+            // (some people have run out of memory while RI sorting tables)
+            builder = null;
+            document = null;
+            factory = null;
+            meta = null;
+            rootNode = null;
+
+            duration = progressListener.finishedGatheringDetails();
+            long overallDuration = progressListener.finished(tables, config);
+            logger.info("Wrote table details in " + duration / 1000 + " seconds");
+            if (logger.isLoggable(Level.INFO)) {
+                logger.info("Wrote relationship details of " + tables.size() + " tables/views to directory '" + outputDir + "' in " + overallDuration / 1000 + " seconds.");
+                logger.info("View the results by opening " + JSON_FILE_NAME);
+            }
+
+            return db;
+        } catch (Config.MissingRequiredParameterException missingParam) {
+            config.dumpUsage(missingParam.getMessage(), missingParam.isDbTypeSpecific());
+            return null;
+        }
+    }
+	
+	public Database oldAnalyze(String schema, Config config, File outputDir,  ProgressListener progressListener) throws SQLException, IOException {
+        try {
+            // set the log level for the root logger
+            Logger.getLogger("").setLevel(config.getLogLevel());
+
+            // clean-up console output a bit
+            for (Handler handler : Logger.getLogger("").getHandlers()) {
+                if (handler instanceof ConsoleHandler) {
+                    ((ConsoleHandler)handler).setFormatter(new LogFormatter());
+                    handler.setLevel(config.getLogLevel());
+                }
+            }
+
+            fineEnabled = logger.isLoggable(Level.FINE);
+            logger.info("Starting schema analysis");
+
+            if (!outputDir.isDirectory()) {
+                if (!outputDir.mkdirs()) {
+                    throw new IOException("Failed to create directory '" + outputDir + "'");
+                }
+            }
+
+            String dbName = config.getDb();
+
+            String catalog = commandLineArguments.getCatalog();
+
+            DatabaseMetaData meta = sqlService.connect(config);
+
+            logger.fine("supportsSchemasInTableDefinitions: " + meta.supportsSchemasInTableDefinitions());
+            logger.fine("supportsCatalogsInTableDefinitions: " + meta.supportsCatalogsInTableDefinitions());
+
+            // set default Catalog and Schema of the connection
+            if(schema == null)
+            	schema = meta.getConnection().getSchema();
+            if(catalog == null)
+            	catalog = meta.getConnection().getCatalog();
+
+            SchemaMeta schemaMeta = config.getMeta() == null ? null : new SchemaMeta(config.getMeta(), dbName, schema);
             if (config.isHtmlGenerationEnabled()) {
                 new File(outputDir, "tables").mkdirs();
                 new File(outputDir, "diagrams/summary").mkdirs();
@@ -274,7 +412,7 @@ public class SchemaAnalyzer {
 			} finally {
                 out.close();
             }
-
+            
             // 'try' to make some memory available for the sorting process
             // (some people have run out of memory while RI sorting tables)
             builder = null;
